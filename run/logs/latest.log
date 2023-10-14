@@ -1,0 +1,29 @@
+[18:04:57] [main/INFO]: Extra: [--tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
+[18:04:57] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/akulg/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
+[18:04:57] [main/INFO]: Loading tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[18:04:57] [main/INFO]: Using primary tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[18:04:57] [main/INFO]: Calling tweak class gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[18:04:57] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.7.11 Source=file:/C:/Users/akulg/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.7.11-SNAPSHOT/7a670207bdb97db418118ad1e9bb42424ff3776d/mixin-0.7.11-SNAPSHOT.jar Service=LaunchWrapper Env=UNKNOWN
+[18:04:57] [main/INFO]: FML platform manager could not load class cpw.mods.fml.relauncher.CoreModManager. Proceeding without FML support.
+[18:04:57] [main/INFO]: Compatibility level set to JAVA_8
+[18:04:57] [main/ERROR]: Mixin config mixins.GenesisClient.json does not specify "minVersion" property
+[18:04:57] [main/INFO]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[18:04:57] [main/INFO]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[18:04:57] [main/WARN]: Reference map 'mixins.GenesisClient.refmap.json' for mixins.GenesisClient.json could not be read. If this is a development environment you can ignore this message
+[18:04:57] [main/ERROR]: Classloader restrictions [PACKAGE_CLASSLOADER_EXCLUSION] encountered loading mixins.GenesisClient.json:client.MixinMinecraft, name: gg.genesis.GenesisClient.mixins.client.MixinMinecraft
+[18:04:58] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[18:04:58] [main/INFO]: Mixing client.MixinMinecraft from mixins.GenesisClient.json into net.minecraft.client.Minecraft
+[18:04:59] [Client thread/ERROR]: Can't find the resource index file: .\assets\indexes\1.8.json
+[18:04:59] [Client thread/INFO]: Setting user: Player62
+[18:04:59] [Client thread/INFO]: (Session ID is token:FML:Player62)
+[18:05:01] [Client thread/INFO]: LWJGL Version: 2.9.3
+[18:05:02] [Client thread/INFO]: Reloading ResourceManager: Default
+[18:05:02] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[18:05:02] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[18:05:02] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[18:05:03] [Thread-7/INFO]: OpenAL initialized.
+[18:05:03] [Sound Library Loader/INFO]: Sound engine started
+[18:05:04] [Client thread/INFO]: Created: 512x512 textures-atlas
+[18:05:08] [Client thread/INFO]: Stopping!
+[18:05:08] [Client thread/INFO]: SoundSystem shutting down...
+[18:05:08] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

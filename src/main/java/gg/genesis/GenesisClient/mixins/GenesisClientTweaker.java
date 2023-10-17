@@ -1,3 +1,5 @@
+// Tweaker for the client (basically lets us inject code)
+
 package gg.genesis.GenesisClient.mixins;
 
 import net.minecraft.launchwrapper.ITweaker;

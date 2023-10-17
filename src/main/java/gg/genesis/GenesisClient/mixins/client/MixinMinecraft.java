@@ -1,4 +1,4 @@
-// File that handles everything during client startup
+// File that handles everything background-related during startup
 
 package gg.genesis.GenesisClient.mixins.client;
 
@@ -12,9 +12,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(Minecraft.class)
 public class MixinMinecraft {
     // Change title
-    @Inject(method = "createDisplay", at = @At("HEAD"))
+    @Inject(method = "createDisplay", at = @At("RETURN"))
     public void createDisplay(CallbackInfo callbackInfo) {
         Display.setTitle("Genesis Client 1.8.9 | Version 0.0.1");
     }
-    // TODO: Change logo
 }

@@ -1,20 +1,28 @@
-[20:50:48] [main/INFO]: Extra: [--tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
-[20:50:48] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/akulg/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
-[20:50:48] [main/INFO]: Loading tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
-[20:50:48] [main/INFO]: Using primary tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
-[20:50:48] [main/INFO]: Calling tweak class gg.genesis.GenesisClient.mixins.GenesisClientTweaker
-[20:50:48] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.7.11 Source=file:/C:/Users/akulg/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.7.11-SNAPSHOT/7a670207bdb97db418118ad1e9bb42424ff3776d/mixin-0.7.11-SNAPSHOT.jar Service=LaunchWrapper Env=UNKNOWN
-[20:50:48] [main/INFO]: FML platform manager could not load class cpw.mods.fml.relauncher.CoreModManager. Proceeding without FML support.
-[20:50:48] [main/INFO]: Compatibility level set to JAVA_8
-[20:50:48] [main/ERROR]: Mixin config mixins.GenesisClient.json does not specify "minVersion" property
-[20:50:48] [main/INFO]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
-[20:50:48] [main/INFO]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
-[20:50:48] [main/WARN]: Reference map 'mixins.GenesisClient.refmap.json' for mixins.GenesisClient.json could not be read. If this is a development environment you can ignore this message
-[20:50:48] [main/ERROR]: Classloader restrictions [PACKAGE_CLASSLOADER_EXCLUSION] encountered loading mixins.GenesisClient.json:client.MixinMinecraft, name: gg.genesis.GenesisClient.mixins.client.MixinMinecraft
-[20:50:48] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
-[20:50:48] [main/INFO]: Mixing client.MixinMinecraft from mixins.GenesisClient.json into net.minecraft.client.Minecraft
-[20:50:50] [Client thread/ERROR]: Can't find the resource index file: .\assets\indexes\1.8.json
-[20:50:50] [Client thread/INFO]: Setting user: Player515
-[20:50:50] [Client thread/INFO]: (Session ID is token:FML:Player515)
-[20:50:52] [Client thread/INFO]: LWJGL Version: 2.9.3
-[20:50:52] [Client Shutdown Thread/INFO]: Stopping server
+[19:21:54] [main/INFO]: Extra: [--tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
+[19:21:54] [main/INFO]: Running with arguments: [--userProperties, {}, --assetsDir, C:/Users/akulg/.gradle/caches/minecraft/assets, --assetIndex, 1.8, --accessToken{REDACTED}, --version, 1.8.9, --tweakClass, gg.genesis.GenesisClient.mixins.GenesisClientTweaker]
+[19:21:54] [main/INFO]: Loading tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[19:21:54] [main/INFO]: Using primary tweak class name gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[19:21:54] [main/INFO]: Calling tweak class gg.genesis.GenesisClient.mixins.GenesisClientTweaker
+[19:21:54] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.7.11 Source=file:/C:/Users/akulg/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.7.11-SNAPSHOT/7a670207bdb97db418118ad1e9bb42424ff3776d/mixin-0.7.11-SNAPSHOT.jar Service=LaunchWrapper Env=UNKNOWN
+[19:21:55] [main/INFO]: FML platform manager could not load class cpw.mods.fml.relauncher.CoreModManager. Proceeding without FML support.
+[19:21:55] [main/INFO]: Compatibility level set to JAVA_8
+[19:21:55] [main/ERROR]: Mixin config mixins.GenesisClient.json does not specify "minVersion" property
+[19:21:55] [main/INFO]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[19:21:55] [main/INFO]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[19:21:55] [main/WARN]: Reference map 'mixins.GenesisClient.refmap.json' for mixins.GenesisClient.json could not be read. If this is a development environment you can ignore this message
+[19:21:55] [main/ERROR]: Classloader restrictions [PACKAGE_CLASSLOADER_EXCLUSION] encountered loading mixins.GenesisClient.json:client.MixinMinecraft, name: gg.genesis.GenesisClient.mixins.client.MixinMinecraft
+[19:21:55] [main/INFO]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[19:21:55] [main/INFO]: Mixing client.MixinMinecraft from mixins.GenesisClient.json into net.minecraft.client.Minecraft
+[19:21:56] [Client thread/INFO]: Setting user: Player484
+[19:21:56] [Client thread/INFO]: (Session ID is token:FML:Player484)
+[19:21:58] [Client thread/INFO]: LWJGL Version: 2.9.3
+[19:21:59] [Client thread/INFO]: Reloading ResourceManager: Default
+[19:21:59] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[19:22:00] [Thread-7/INFO]: Initializing LWJGL OpenAL
+[19:22:00] [Thread-7/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[19:22:00] [Thread-7/INFO]: OpenAL initialized.
+[19:22:00] [Sound Library Loader/INFO]: Sound engine started
+[19:22:02] [Client thread/INFO]: Created: 512x512 textures-atlas
+[19:22:16] [Client thread/INFO]: Stopping!
+[19:22:16] [Client thread/INFO]: SoundSystem shutting down...
+[19:22:17] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com

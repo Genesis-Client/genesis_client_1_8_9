@@ -2,63 +2,61 @@
 
 package gg.genesis.GenesisClient.mixins;
 
-import net.minecraft.launchwrapper.ITweaker;
-import net.minecraft.launchwrapper.LaunchClassLoader;
-import org.spongepowered.asm.launch.MixinBootstrap;
-import org.spongepowered.asm.mixin.MixinEnvironment;
-import org.spongepowered.asm.mixin.Mixins;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Tweaker Used to Start Mixin Bootstrap - called in Launch Arguments */
+import org.spongepowered.asm.launch.MixinBootstrap;
+import org.spongepowered.asm.mixin.MixinEnvironment;
+import org.spongepowered.asm.mixin.Mixins;
+import org.spongepowered.asm.mixin.MixinEnvironment.Side;
+
+import net.minecraft.launchwrapper.ITweaker;
+import net.minecraft.launchwrapper.LaunchClassLoader;
+
 public class GenesisClientTweaker implements ITweaker {
 
-    // List of Launch Arguments for getLaunchArguments[]
-    private final List<String> launchArguments = new ArrayList<>();
+    private static final List<String> args = new ArrayList<>();
 
     @Override
     public void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) {
-        this.launchArguments.addAll(args);
-
-        if (!args.contains("--version") && profile != null) {
-            launchArguments.add("--version");
-            launchArguments.add(profile);
+        GenesisClientTweaker.args.addAll(args);
+        if(gameDir != null) {
+            GenesisClientTweaker.args.add("--gameDir");
+            GenesisClientTweaker.args.add(gameDir.getAbsolutePath());
         }
-
-        if (!args.contains("--assetDir") && assetsDir != null) {
-            launchArguments.add("--assetDir");
-            launchArguments.add(assetsDir.getAbsolutePath());
+        if(assetsDir != null) {
+            GenesisClientTweaker.args.add("--assetsDir");
+            GenesisClientTweaker.args.add(assetsDir.getAbsolutePath());
         }
-
-        if (!args.contains("--gameDir") && gameDir != null) {
-            launchArguments.add("--gameDir");
-            launchArguments.add(gameDir.getAbsolutePath());
+        if(profile != null) {
+            GenesisClientTweaker.args.add("--version");
+            GenesisClientTweaker.args.add(profile);
         }
     }
 
     @Override
     public void injectIntoClassLoader(LaunchClassLoader classLoader) {
         MixinBootstrap.init();
-
-        MixinEnvironment env = MixinEnvironment.getDefaultEnvironment();
         Mixins.addConfiguration("mixins.GenesisClient.json");
 
-        if (env.getObfuscationContext() == null) {
-            env.setObfuscationContext("notch");
+        MixinEnvironment environment = MixinEnvironment.getDefaultEnvironment();
+
+        if(environment.getObfuscationContext() == null) {
+            environment.setObfuscationContext("notch");
         }
 
-        env.setSide(MixinEnvironment.Side.CLIENT);
+        environment.setSide(Side.CLIENT);
     }
 
     @Override
     public String getLaunchTarget() {
-        return "net.minecraft.client.main.Main";
+        return MixinBootstrap.getPlatform().getLaunchTarget();
     }
 
     @Override
     public String[] getLaunchArguments() {
-        return launchArguments.toArray(new String[0]);
+        return GenesisClientTweaker.args.toArray(new String[0]);
     }
+
 }

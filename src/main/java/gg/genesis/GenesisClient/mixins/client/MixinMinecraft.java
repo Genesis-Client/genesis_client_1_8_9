@@ -14,6 +14,6 @@ public class MixinMinecraft {
     // Change title
     @Inject(method = "createDisplay", at = @At("RETURN"))
     public void createDisplay(CallbackInfo callbackInfo) {
-        Display.setTitle("Genesis Client 1.8.9 | Version 0.0.1");
+        Display.setTitle("Genesis Client 1.8.9 | Version 0.0.1-pre-alpha001");
     }
 }
